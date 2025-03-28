@@ -49,5 +49,10 @@ A simple React app that allows users to log in, view a list of users, edit user 
   2. The Delete functionality will remove users from the local state but not actually delete them from the API permanently.
   3. The app uses React Router for navigation.
 
+# Netlify Link
+  ```
+  https://vocal-blancmange-491ae5.netlify.app/
+  ```
+
 
 
