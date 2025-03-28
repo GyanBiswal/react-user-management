@@ -1,33 +1,53 @@
 # React User Management App
 A simple React app that allows users to log in, view a list of users, edit user details, and delete users.
 
+# Features
+  - User Login (POST /api/login)
+  - Fetch Users (GET /api/users?page={page})
+  - Edit User (PUT /api/users/{id})
+  - Delete User (DELETE /api/users/{id})
+  - Protected routes using authentication
+
 # Getting Started
-  Make sure you have the following installed:
-    - Node.js (LTS)
-    - npm (comes with Node.js) or Yarn
-
-# Installation & Setup
   1. Clone the Repository
-     
-### **Output in GitHub or Markdown View:**
-#### **Install Dependencies**
-axios.get("https://reqres.in/api/users?page=1")
-  .then(response => console.log(response.data))
-  .catch(error => console.error(error));
+     ```
+     git clone https://github.com/your-username/user-management-app.git
+     cd user-management-app
+  2. Install Dependencies
+     Make sure you have Node.js and npm installed. Then, run:
+     ```
+     npm install
+     ```
+  4.  Start the Development Server
+      ```
+      npm start
+      ```
+# Authentication
+  This project uses Reqres API for authentication. Use the following credentials:
+  ```
+  Email: eve.holt@reqres.in
+  Password: cityslicka
 
-```bash
-npm install
+  ```
+
+# API Endpoints
+  1. Fetch User
+     ```
+     GET https://reqres.in/api/users?page={page}
+     ```
+  2. Edit User
+     ```
+     PUT https://reqres.in/api/users/{id}
+     ```
+  3. Delete User
+     ```
+     DELETE https://reqres.in/api/users/{id}
+     ```
+
+# Assumptions & Considerations
+  1. The Reqres API does not persist updates. When a user is edited, the changes will not reflect in future requests.
+  2. The Delete functionality will remove users from the local state but not actually delete them from the API permanently.
+  3. The app uses React Router for navigation.
 
 
 
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
