@@ -1,4 +1,25 @@
-# React + Vite
+# React User Management App
+A simple React app that allows users to log in, view a list of users, edit user details, and delete users.
+
+# Getting Started
+  Make sure you have the following installed:
+    - Node.js (LTS)
+    - npm (comes with Node.js) or Yarn
+
+# Installation & Setup
+  1. Clone the Repository
+     
+### **Output in GitHub or Markdown View:**
+#### **Install Dependencies**
+axios.get("https://reqres.in/api/users?page=1")
+  .then(response => console.log(response.data))
+  .catch(error => console.error(error));
+
+```bash
+npm install
+
+
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
